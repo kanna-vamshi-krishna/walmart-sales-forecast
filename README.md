@@ -1,5 +1,3 @@
-# walmart-sales-forecast
-"Walmart Weekly Sales Forecasting using SARIMA. This project analyzes sales trends and predicts future sales using Time Series Analysis."
 # 🛒 Walmart Sales Forecasting using SARIMA
 
 ## 📌 Overview
@@ -10,29 +8,40 @@ This project applies **Time Series Analysis** to forecast **weekly sales** for W
   - Captures **trend and seasonality** in time series data.  
   - Forecasts **next 12 weeks** of Walmart store sales.  
 
-## 📈 Visualizations & Insights
-This project includes various **data visualizations** to understand sales trends and patterns:
+---
+
+## 📈 Visualizations & Insights  
+This project includes various **data visualizations** to analyze patterns in Walmart's sales data:
 
 ### **1️⃣ Data Exploration & Trend Analysis**
-- **Time Series Plot** – Visualizes overall sales trends over time.  
-  ![Time Series Plot](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/time_series_plot.png)
-
-- **Seasonal Trend Plot** – Shows seasonal variations in sales across months.  
-  ![Seasonal Trend Plot](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/seasonal_trend.png)
-
-### **2️⃣ Statistical Analysis**
 - **Box Plot for Outliers** – Identifies potential outliers in sales data.  
   ![Box Plot](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/box_plot.png)
 
-- **Correlation Plots** – Examines relationships between sales and factors like CPI, Unemployment, and Temperature.  
-  ![Correlation Plot](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/correlation_plot.png)
+- **Unemployment vs. Weekly Sales (Scatter Plot)** – Analyzes if the unemployment rate affects sales.  
+  ![Unemployment vs Sales](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/unemployment_vs_sales.png)
 
-### **3️⃣ SARIMA Forecasting**
-- **SARIMA Model Forecast Plot** – Displays actual vs. forecasted sales for the next 12 weeks.  
+- **Seasonal Trend of Weekly Sales (Line Plot)** – Shows how sales change throughout the year.  
+  ![Seasonal Trend](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/seasonal_trend.png)
+
+### **2️⃣ Statistical Analysis**
+- **Weekly Sales vs Temperature (Scatter Plot)** – Examines if temperature impacts sales.  
+  ![Sales vs Temperature](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/sales_vs_temperature.png)
+
+- **Weekly Sales vs Consumer Price Index (Scatter Plot)** – Analyzes the effect of CPI on sales.  
+  ![Sales vs CPI](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/sales_vs_cpi.png)
+
+### **3️⃣ Store Performance Analysis**
+- **Top 5 Performing Stores (Bar Plot)** – Shows the highest sales-generating stores.  
+  ![Top 5 Stores](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/top_5_stores.png)
+
+- **Highest & Lowest Sales (Bar Plot)** – Compares the best and worst-performing stores.  
+  ![Highest vs Lowest Sales](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/highest_vs_lowest_sales.png)
+
+### **4️⃣ SARIMA Forecasting**
+- **SARIMA Model Forecast for Store 1 (Line Plot)** – Displays actual vs. forecasted sales for the next 12 weeks.  
   ![SARIMA Forecast](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/sarima_forecast.png)
 
-- **Confidence Interval Bands** – Highlights prediction uncertainty over time.  
-  ![Confidence Interval](https://raw.githubusercontent.com/YourGitHubUsername/walmart-sales-forecast/main/images/confidence_interval.png)
+---
 
 ## 🔢 Data Processing
 - Converted `Date` to datetime format and resampled data to **weekly frequency**.  
