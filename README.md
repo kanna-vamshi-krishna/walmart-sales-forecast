@@ -22,8 +22,7 @@ This project applies **Time Series Analysis** to forecast **weekly sales** for W
 - The **seasonal trend** of weekly sales is visualized using a line plot.
 - Clear **recurring patterns** suggest the presence of **seasonality** in the data.
 
-  ![Seasonal Trend](seasonal_trend.png)
-
+  ![Seasonal Trend](seasonal trend.png)
 ### **3️⃣ Impact of Economic Factors on Sales**
 - The following scatter plots show how **weekly sales are affected by external factors** like:
   - 🔥 **Temperature vs Sales**
