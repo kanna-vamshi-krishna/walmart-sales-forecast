@@ -1,60 +1,75 @@
-# 🛒 Walmart Sales Forecasting using SARIMA
+ # 🛒 Walmart Sales Forecasting using SARIMA
 
 ## 📌 Overview
-This project applies **Time Series Analysis** to forecast **weekly sales** for Walmart stores using the **SARIMA (Seasonal AutoRegressive Integrated Moving Average) model**. The goal is to analyze **sales trends, seasonality, and patterns** to support business decision-making.
+This project applies **Time Series Analysis** to forecast **weekly sales** for Walmart stores using the **SARIMA (Seasonal AutoRegressive Integrated Moving Average)** model. The goal is to analyze **sales trends, seasonality, and patterns** to support business decision-making.
 
-## 📊 Model Used
-- **SARIMA (Seasonal ARIMA)**  
-  - Captures **trend and seasonality** in time series data.  
-  - Forecasts **next 12 weeks** of Walmart store sales.  
+## 📈 Model Used
+### **SARIMA (Seasonal ARIMA)**
+- 📌 Captures **trend and seasonality** in time series data.
+- 📌 Forecasts **next 12 weeks** of Walmart store sales.
 
 ---
 
-## 📈 Visualizations & Insights  
-This project includes various **data visualizations** to analyze patterns in Walmart's sales data:
+## 📊 Visualizations & Insights
 
-### **1️⃣ Data Exploration & Trend Analysis**
-- **Box Plot for Outliers** – Identifies potential outliers in sales data.  
+### **1️⃣ Sales Data Distribution**
+- The box plot shows the **spread and distribution** of Walmart weekly sales data.
+- Helps detect **outliers** and variations across different stores.
+  
   ![Box Plot](boxplot_walmart.png)
 
-- **Unemployment vs. Weekly Sales (Scatter Plot)** – Analyzes if the unemployment rate affects sales.  
-  ![Unemployment vs Sales](unemployement_vs_sales.png)
+### **2️⃣ Weekly Sales Trends**
+- The **seasonal trend** of weekly sales is visualized using a line plot.
+- Clear **recurring patterns** suggest the presence of **seasonality** in the data.
 
-- **Seasonal Trend of Weekly Sales (Line Plot)** – Shows how sales change throughout the year.  
   ![Seasonal Trend](seasonal_trend.png)
 
-### **2️⃣ Statistical Analysis**
-- **Weekly Sales vs Temperature (Scatter Plot)** – Examines if temperature impacts sales.  
-  ![Sales vs Temperature](sales_vs_temp.png)
+### **3️⃣ Impact of Economic Factors**
+- The following scatter plots show how **weekly sales are affected by external factors** like:
+  - 🔥 **Temperature vs Sales**
+  - 📉 **Unemployment vs Sales**
+  - 🏷 **Consumer Price Index (CPI) vs Sales**
+  
+  ![Sales vs Temperature](sales_vs_temp.png)  
+  ![Unemployment vs Sales](unemployement_vs_sales.png)  
+  ![Sales vs CPI](sales_vs_cpi.png)  
 
-- **Weekly Sales vs Consumer Price Index (Scatter Plot)** – Analyzes the effect of CPI on sales.  
-  ![Sales vs CPI](sales_vs_cpi.png)
+### **4️⃣ Top Performing & Lowest Performing Stores**
+- The **Top 5 performing stores** based on total sales.
+- Extracted **highest and lowest weekly sales values**.
 
-### **3️⃣ Store Performance Analysis**
-- **Top 5 Performing Stores (Bar Plot)** – Shows the highest sales-generating stores.  
-  ![Top 5 Stores](top_5_stores.png)
+  ![Top 5 Stores](top5_stores.png)  
+  ![Highest vs Lowest Sales](highest_vs_lowest_sales.png)  
 
-- **Highest & Lowest Sales (Bar Plot)** – Compares the best and worst-performing stores.  
-  ![Highest vs Lowest Sales](highest_vs_lowest_sales.png)
+### **5️⃣ Forecasted Sales for the Next 12 Weeks**
+- Using the SARIMA model, we forecasted the next **12 weeks of sales**.
+- The confidence intervals widen over time, indicating **higher uncertainty** in long-term predictions.
 
-### **4️⃣ SARIMA Forecasting**
-- **SARIMA Model Forecast for Store 1 (Line Plot)** – Displays actual vs. forecasted sales for the next 12 weeks.  
-  ![SARIMA Forecast](sarima_forecast.png)
+  ![Sales Forecast](sarima_forecast.png)  
 
 ---
 
-## 🔢 Data Processing
-- Converted `Date` to datetime format and resampled data to **weekly frequency**.  
-- Aggregated **weekly sales** at the store level.  
-- Handled missing values using **forward fill**.
+## 🏗 Steps Followed
+1. **Data Preprocessing**: Cleaning and preparing the dataset.
+2. **Exploratory Data Analysis (EDA)**: Understanding sales trends and patterns.
+3. **Feature Engineering**: Extracting useful information from raw data.
+4. **Time Series Modeling**: Applying **SARIMA** for forecasting.
+5. **Evaluation & Insights**: Analyzing predictions and model performance.
 
-## 🚀 Results & Insights
-- The **SARIMA model successfully predicts sales trends** over the next 12 weeks.  
-- Sales data shows **clear seasonality**, validating the choice of SARIMA.  
-- **Confidence intervals widen over time**, indicating increasing uncertainty in long-term forecasts.
+---
 
-## 🛠️ Installation & Usage
-### Clone Repository:
-```bash
-git clone https://github.com/kanna-vamshi-krishna/walmart-sales-forecast.git
+## 🚀 Technologies Used
+- **Python**
+- **Pandas, NumPy** – Data handling & manipulation
+- **Matplotlib, Seaborn** – Data Visualization
+- **Statsmodels** – Time Series Analysis
+- **GitHub** – Version Control
+
+---
+
+## 📌 How to Use
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/kanna-vamshi-krishna/walmart-sales-forecast.git
+
 
