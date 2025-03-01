@@ -29,7 +29,7 @@ This project applies **Time Series Analysis** to forecast **weekly sales** for W
   - 📉 **Unemployment vs Sales**
   - 🏷 **Consumer Price Index (CPI) vs Sales**
 
-  ![Sales vs Temperature](sales_vs_temp.png)  
+  ![Sales vs Temperature](sales vs temp.png)  
   ![Unemployment vs Sales](unemployement_vs_sales.png)  
   ![Sales vs CPI](sales_vs_cpi.png)  
 
