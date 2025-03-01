@@ -44,7 +44,7 @@ This project applies **Time Series Analysis** to forecast **weekly sales** for W
 - Using the SARIMA model, we forecasted the next **12 weeks of sales**.
 - The confidence intervals widen over time, indicating **higher uncertainty** in long-term predictions.
 
-  ![Sales Forecast](sarima_forecast.png)  
+  ![Sales Forecast](https://github.com/kanna-vamshi-krishna/walmart-sales-forecast/blob/main/sarima%20forecast.png?raw=true)  
 
 ---
 
